@@ -464,7 +464,7 @@ function About() {
 const PROJECTS = [
   { num: "01", tag: "Agentic AI", title: "Multi-Agent Code Debugger", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["Python", "Langgraph","FastAPI", "HTML","CSS","Javascript"] },
   { num: "02", tag: "AI", title: "RAG Chatbot", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["Python", "Langchain", "FastAPI","React.js"] },
-  { num: "03", tag: "CLI Tool", title: "AI Voice Receptionist for Dental Care", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["n8n", "Vapi"] }
+  { num: "03", tag: "Agentic AI", title: "AI Voice Receptionist for Dental Care", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["n8n", "Vapi"] }
 ];
 
 function Projects() {
