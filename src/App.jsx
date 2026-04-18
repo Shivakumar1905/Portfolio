@@ -837,7 +837,7 @@ function Footer() {
         Shivakumar P
       </span>
       <span className="mono" style={{ fontSize: "12px", color: "rgba(247,244,239,0.4)", letterSpacing: "0.08em" }}>
-        &copy;{new Date().getFullYear()} · Built with React · All rights reserved
+        &copy;{new Date().getFullYear()} · All rights reserved
       </span>
       <div style={{ display: "flex", gap: "24px" }}>
         {[
