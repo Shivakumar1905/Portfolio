@@ -1,26 +1,3 @@
-// import Navbar from "./components/NavBar";
-// import Hero from "./components/Hero";
-// import About from "./components/About";
-// import Projects from "./components/Projects";
-// import Skills from "./components/Skills";
-// import Experience from "./components/Experience";
-// import Contact from "./components/Contact";
-
-// export default function App() {
-//   return (
-//     // <div className="bg-white text-gray-800 font-sans">
-//     //   <Navbar />
-//     //   <Hero />
-//     //   <About />
-//     //   <Projects />
-//     //   <Skills />
-//     //   <Experience />
-//     //   <Contact />
-//     // </div>
-
-//   );
-// }
-
 import { useState, useEffect, useRef } from "react";
 
 /* ─── Tailwind CDN + Google Fonts injected via style tag ─── */
@@ -416,7 +393,7 @@ function Hero() {
 function About() {
   const ref = useReveal();
   return (
-    <section id="about" ref={ref} className="reveal" style={{ paddingTop: "5px", paddingBottom: '120px', paddingLeft: '80px', maxWidth: "1200px", marginTop: "0px" }}>
+    <section id="about" ref={ref} className="reveal" style={{ paddingTop: "5px", paddingBottom: '120px', paddingLeft: '80px', paddingRight: '80px',maxWidth: "1200px", marginTop: "0px" }}>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="grid-1-mobile">
 
         {/* Avatar / Image placeholder */}
@@ -485,12 +462,9 @@ function About() {
 
 /* ─── PROJECTS ─── */
 const PROJECTS = [
-  { num: "01", tag: "Web App", title: "Your Project Title", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["React", "Node.js", "MongoDB"] },
-  { num: "02", tag: "ML / AI", title: "Your Project Title", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["Python", "PyTorch", "FastAPI"] },
-  { num: "03", tag: "CLI Tool", title: "Your Project Title", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["Go", "SQLite"] },
-  { num: "04", tag: "Mobile", title: "Your Project Title", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["React Native", "Firebase"] },
-  { num: "05", tag: "API", title: "Your Project Title", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["Django", "PostgreSQL", "Redis"] },
-  { num: "06", tag: "Systems", title: "Your Project Title", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["C++", "OS Concepts"] },
+  { num: "01", tag: "Agentic AI", title: "Multi-Agent Code Debugger", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["Python", "Langgraph","FastAPI", "HTML","CSS","Javascript"] },
+  { num: "02", tag: "AI", title: "RAG Chatbot", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["Python", "Langchain", "FastAPI","React.js"] },
+  { num: "03", tag: "CLI Tool", title: "AI Voice Receptionist for Dental Care", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["n8n", "Vapi"] }
 ];
 
 function Projects() {
@@ -506,9 +480,6 @@ function Projects() {
               <span style={{ fontStyle: "italic", color: "var(--accent)" }}>shipped</span>
             </h2>
           </div>
-          <p style={{ maxWidth: "320px", fontSize: "14px", color: "var(--ink-muted)", lineHeight: "1.8" }}>
-            A curated collection of projects spanning web, ML, and systems. Each one taught me something new.
-          </p>
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: "24px" }} className="grid-1-mobile">
@@ -542,7 +513,7 @@ function ProjectCard({ num, tag, title, desc, stack, delay }) {
           ))}
         </div>
         <div style={{ display: "flex", gap: "12px" }}>
-          <a href="#" className="btn-primary" style={{ padding: "8px 18px", fontSize: "13px" }}>View Project →</a>
+          <a href="https://multi-agent-orchestration.onrender.com/" className="btn-primary" style={{ padding: "8px 18px", fontSize: "13px" }}>View Project →</a>
           <a href="#" className="btn-outline" style={{ padding: "7px 18px", fontSize: "13px" }}>GitHub</a>
         </div>
       </div>
