@@ -431,7 +431,7 @@ function About() {
           }}>
             <div style={{ textAlign: "center" }}>
               
-              <span className="mono" style={{ fontSize: "11px", color: "var(--ink-faint)", letterSpacing: "0.12em" }}><img src={"./public/image.png"}/></span>
+              <span className="mono" style={{ fontSize: "11px", color: "var(--ink-faint)", letterSpacing: "0.12em" }}><img src={"./image.png"}/></span>
             </div>
             {/* Corner accents */}
             <div style={{ position: "absolute", top: "16px", left: "16px", width: "24px", height: "24px", borderTop: "2px solid var(--accent)", borderLeft: "2px solid var(--accent)" }} />
