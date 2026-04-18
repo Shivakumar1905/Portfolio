@@ -460,13 +460,6 @@ function About() {
   );
 }
 
-/* ─── PROJECTS ─── */
-const PROJECTS = [
-  { num: "01", tag: "Agentic AI", title: "Multi-Agent Code Debugger", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["Python", "Langgraph","FastAPI", "HTML","CSS","Javascript"] },
-  { num: "02", tag: "AI", title: "RAG Chatbot", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["Python", "Langchain", "FastAPI","React.js"] },
-  { num: "03", tag: "Agentic AI", title: "AI Voice Receptionist for Dental Care", desc: "Describe what this project does, the problem it solves, and the technologies used. Two to three sentences works well here.", stack: ["n8n", "Vapi"] }
-];
-
 function Projects() {
   const ref = useReveal();
   return (
@@ -492,7 +485,31 @@ function Projects() {
   );
 }
 
-function ProjectCard({ num, tag, title, desc, stack, delay }) {
+const PROJECTS = [
+  { 
+    num: "01", tag: "Agentic AI", title: "Multi-Agent Code Debugger", 
+    desc: "Describe what this project does...", 
+    stack: ["Python", "Langgraph", "FastAPI", "HTML", "CSS", "Javascript"],
+    liveUrl: "https://multi-agent-orchestration.onrender.com/",
+    githubUrl: "#"
+  },
+  { 
+    num: "02", tag: "AI", title: "RAG Chatbot", 
+    desc: "Describe what this project does...", 
+    stack: ["Python", "Langchain", "FastAPI", "React.js"],
+    liveUrl: "#",
+    githubUrl: "#"
+  },
+  { 
+    num: "03", tag: "Voice AI", title: "AI Voice Receptionist for Dental Care", 
+    desc: "Describe what this project does...", 
+    stack: ["n8n", "Vapi"],
+    liveUrl: "#",
+    githubUrl: "#"
+  },
+];
+
+function ProjectCard({ num, tag, title, desc, stack, delay, liveUrl, githubUrl }) {
   const ref = useReveal();
   return (
     <div ref={ref} className="project-card reveal" style={{ transitionDelay: `${delay}s` }}>
@@ -513,8 +530,28 @@ function ProjectCard({ num, tag, title, desc, stack, delay }) {
           ))}
         </div>
         <div style={{ display: "flex", gap: "12px" }}>
-          <a href="https://multi-agent-orchestration.onrender.com/" className="btn-primary" style={{ padding: "8px 18px", fontSize: "13px" }}>View Project →</a>
-          <a href="#" className="btn-outline" style={{ padding: "7px 18px", fontSize: "13px" }}>GitHub</a>
+          <a 
+            href={liveUrl!== "#" ? liveUrl : undefined} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            onClick={(e) => {if (liveUrl === "#") {
+      e.preventDefault();
+      alert("I'm currently working on this project. Will update soon!");
+    }}}
+            className="btn-primary" 
+            style={{ padding: "8px 18px", fontSize: "13px" }}
+          >
+            View Project →
+          </a>
+          <a 
+            href={githubUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-outline" 
+            style={{ padding: "7px 18px", fontSize: "13px" }}
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </div>
