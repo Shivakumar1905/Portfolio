@@ -504,8 +504,8 @@ const PROJECTS = [
     num: "03", tag: "Voice AI", title: "AI Voice Receptionist for Dental Care", 
     desc: "An AI voice receptionist that automates dental appointment booking, availability checks, and patient queries using n8n and Vapi integration system.", 
     stack: ["n8n", "Vapi"],
-    liveUrl: "#",
-    githubUrl: "#"
+    liveUrl: "https://rag-frontend-chatbot.vercel.app/",
+    githubUrl: "https://github.com/Shivakumar1905/RAG-Frontend-Chatbot"
   },
 ];
 
