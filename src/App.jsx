@@ -488,21 +488,21 @@ function Projects() {
 const PROJECTS = [
   { 
     num: "01", tag: "Agentic AI", title: "Multi-Agent Code Debugger", 
-    desc: "Describe what this project does...", 
+    desc: "A LangGraph-based multi-agent system that automatically detects, fixes, and explains Python errors using specialized agents, enabling faster and more structured debugging.", 
     stack: ["Python", "Langgraph", "FastAPI", "HTML", "CSS", "Javascript"],
     liveUrl: "https://multi-agent-orchestration.onrender.com/",
     githubUrl: "#"
   },
   { 
     num: "02", tag: "AI", title: "RAG Chatbot", 
-    desc: "Describe what this project does...", 
-    stack: ["Python", "Langchain", "FastAPI", "React.js"],
+    desc: "A RAG chatbot using FAISS and LangChain to deliver accurate, context-aware answers from custom data, with a FastAPI backend and React frontend.", 
+    stack: ["Python", "Langchain", "FastAPI", "React.js","FAISS"],
     liveUrl: "#",
     githubUrl: "#"
   },
   { 
     num: "03", tag: "Voice AI", title: "AI Voice Receptionist for Dental Care", 
-    desc: "Describe what this project does...", 
+    desc: "An AI voice receptionist that automates dental appointment booking, availability checks, and patient queries using n8n and Vapi integration system.", 
     stack: ["n8n", "Vapi"],
     liveUrl: "#",
     githubUrl: "#"
@@ -639,28 +639,14 @@ const TIMELINE = [
     period: "2023 – 2027",
     title: "B.Tech in Computer Science & Engineering (IoT and Automation)",
     org: "SASTRA Deemed to be University",
-    detail: "CGPA: 7.75 / 10.0 · Relevant coursework: DSA, DBMS, OS, CN, ML, Web Dev"
+    detail: "CGPA: 8.01 / 10.0 · Relevant coursework: DSA, DBMS, OS, CN, ML, Web Dev"
   },
   {
-    type: "internship",
-    period: "Month 20XX – Month 20XX",
-    title: "Your Internship Role",
-    org: "Company Name · Remote / City",
-    detail: "Describe what you worked on, what you built or improved, and the key technologies involved. Keep it achievement-oriented."
-  },
-  {
-    type: "internship",
-    period: "Month 20XX – Month 20XX",
-    title: "Your Internship Role",
-    org: "Company Name · Remote / City",
-    detail: "Describe what you worked on, what you built or improved, and the key technologies involved. Keep it achievement-oriented."
-  },
-  {
-    type: "achievement",
-    period: "Month 20XX",
-    title: "Hackathon / Competition Win",
-    org: "Event Name · Platform",
-    detail: "Brief description of the problem solved, team size, and result. E.g. Top X out of Y teams."
+    type: "Bootcamp",
+    period: "June 2025 – July 2026",
+    title: "NIT-Warangal ML Bootcamp",
+    org: "Academic Institution",
+    detail: "Completed ML bootcamp at NIT Warangal, building 20+ models spanning supervised, unsupervised, and deep learning paradigms. Gained hands-on experience in model development, evaluation, and optimization across real-world datasets."
   },
 ];
 
@@ -775,7 +761,7 @@ function Contact() {
             <div className="divider" style={{ marginBottom: "28px" }} />
             <p style={{ fontSize: "15px", color: "var(--ink-muted)", lineHeight: "1.85", marginBottom: "40px" }}>
               I'm actively seeking internships and full-time roles. Whether you have a project in mind,
-              a question, or just want to say hi — my inbox is always open.
+              a question — my inbox is always open.
             </p>
 
             {/* Contact Details */}
