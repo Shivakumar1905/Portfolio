@@ -788,7 +788,7 @@ function Contact() {
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
                 {[
                   { label: "GitHub",   href: "https://github.com/Shivakumar1905" },
-                  { label: "LinkedIn", href: "https://www.linkedin.com/in/shivakumar-p-160437338/" },
+                  { label: "LinkedIn", href: "https://www.linkedin.com/in/shivakumar-p-147437338/" },
                   { label: "Gmail",    href: "mailto:mails2shivkumar@gmail.com" },
                 ].map(({ label, href }) => (
                   <a key={label} href={href} className="btn-outline" style={{ padding: "7px 16px", fontSize: "13px" }}>
@@ -867,7 +867,7 @@ function Footer() {
       <div style={{ display: "flex", gap: "24px" }}>
         {[
           { label: "GitHub",   href: "https://github.com/Shivakumar1905" },
-          { label: "LinkedIn", href: "https://www.linkedin.com/in/shivakumar-p-160437338/" },
+          { label: "LinkedIn", href: "https://www.linkedin.com/in/shivakumar-p-147437338/" },
           { label: "Resume",   href: "./Shivakumar_Resume.pdf" },
         ].map(({ label, href }) => (
           <a
