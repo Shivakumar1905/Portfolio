@@ -452,7 +452,7 @@ function About() {
           </div>
 
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-            <a href="#" className="btn-primary">Download Resume →</a>
+            <a href="./Shivakumar_Resume.pdf"  className="btn-primary">Download Resume →</a>
           </div>
         </div>
       </div>
@@ -642,11 +642,11 @@ const TIMELINE = [
     detail: "CGPA: 8.01 / 10.0 · Relevant coursework: DSA, DBMS, OS, CN, ML, Web Dev"
   },
   {
-    type: "Bootcamp",
-    period: "June 2025 – July 2026",
+    type: "bootcamp",
+    period: "June 2025 – July 2025",
     title: "NIT-Warangal ML Bootcamp",
     org: "Academic Institution",
-    detail: "Completed ML bootcamp at NIT Warangal, building 20+ models spanning supervised, unsupervised, and deep learning paradigms. Gained hands-on experience in model development, evaluation, and optimization across real-world datasets."
+    detail: "Completed ML bootcamp at NIT Warangal, built 20+ models spanning supervised, unsupervised, and deep learning paradigms. Gained hands-on experience in model development, evaluation, and optimization across real-world datasets."
   },
 ];
 
@@ -654,11 +654,13 @@ const typeColors = {
   education: "#4A90D9",
   internship: "#C8956B",
   achievement: "#5BAD8A",
+  bootcamp: "#806ece",
 };
 const typeLabels = {
   education: "Education",
   internship: "Internship",
   achievement: "Achievement",
+  bootcamp: "Bootcamp",
 };
 
 function Experience() {
@@ -866,7 +868,7 @@ function Footer() {
         {[
           { label: "GitHub",   href: "https://github.com/Shivakumar1905" },
           { label: "LinkedIn", href: "https://www.linkedin.com/in/shivakumar-p-160437338/" },
-          { label: "Resume",   href: "#" },
+          { label: "Resume",   href: "./Shivakumar_Resume.pdf" },
         ].map(({ label, href }) => (
           <a
             key={label}
