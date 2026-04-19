@@ -789,7 +789,7 @@ function Contact() {
                 {[
                   { label: "GitHub",   href: "https://github.com/Shivakumar1905" },
                   { label: "LinkedIn", href: "https://www.linkedin.com/in/shivakumar-p-160437338/" },
-                  { label: "GMail",    href: "mailto:mails2shivkumar@gmail.com" },
+                  { label: "Gmail",    href: "mailto:mails2shivkumar@gmail.com" },
                 ].map(({ label, href }) => (
                   <a key={label} href={href} className="btn-outline" style={{ padding: "7px 16px", fontSize: "13px" }}>
                     {label}
