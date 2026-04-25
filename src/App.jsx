@@ -491,13 +491,12 @@ const PROJECTS = [
     desc: "A LangGraph-based multi-agent system that automatically detects, fixes, and explains Python errors using specialized agents, enabling faster and more structured debugging.", 
     stack: ["Python", "Langgraph", "FastAPI", "HTML", "CSS", "Javascript"],
     liveUrl: "https://multi-agent-orchestration.onrender.com/",
-    githubUrl: "#"
+    githubUrl: "https://github.com/Shivakumar1905/Multi-Agent-Orchestration"
   },
   { 
     num: "02", tag: "AI", title: "RAG Chatbot", 
     desc: "A RAG chatbot using FAISS and LangChain to deliver accurate, context-aware answers from custom data, with a FastAPI backend and React frontend.", 
     stack: ["Python", "Langchain", "FastAPI", "React.js","FAISS"],
-    liveUrl: "https://rag-frontend-chatbot.vercel.app/",
     githubUrl: "https://github.com/Shivakumar1905/RAG-Frontend-Chatbot"
   },
   { 
@@ -530,19 +529,23 @@ function ProjectCard({ num, tag, title, desc, stack, delay, liveUrl, githubUrl }
           ))}
         </div>
         <div style={{ display: "flex", gap: "12px" }}>
-          <a 
-            href={liveUrl!== "#" ? liveUrl : undefined} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            onClick={(e) => {if (liveUrl === "#") {
-      e.preventDefault();
-      alert("I'm currently working on this project. Will update soon!");
-    }}}
-            className="btn-primary" 
-            style={{ padding: "8px 18px", fontSize: "13px" }}
-          >
-            View Project →
-          </a>
+          {liveUrl && (
+            <a 
+              href={liveUrl !== "#" ? liveUrl : undefined} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                if (liveUrl === "#") {
+                  e.preventDefault();
+                  alert("I'm currently working on this project. Will update soon!");
+                }
+              }}
+              className="btn-primary" 
+              style={{ padding: "8px 18px", fontSize: "13px" }}
+            >
+              View Project →
+            </a>
+          )}
           <a 
             href={githubUrl} 
             target="_blank" 
